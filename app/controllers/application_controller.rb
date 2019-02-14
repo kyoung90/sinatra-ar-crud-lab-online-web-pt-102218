@@ -31,6 +31,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/articles/:id/update" do
-
-  end 
+    @article = Article.find_by(id: params[:id])
+  end
 end
