@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  get "/articles/:id/update" do 
+  get "/articles/:id/update" do
 
   end 
 end
