@@ -9,7 +9,8 @@
       <p><%=@article.content %></p>
 
       <form class="" action="/articles/<%= @article.id%>" method="post">
-
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" name="Delete" value="delete">
       </form>
   </body>
 </html>
