@@ -34,4 +34,8 @@ class ApplicationController < Sinatra::Base
     @article = Article.find_by(id: params[:id])
     erb :edit
   end
+
+  patch "/articles/:id" do 
+    @article = Article.find_by(id: params[:id])
+  end 
 end
