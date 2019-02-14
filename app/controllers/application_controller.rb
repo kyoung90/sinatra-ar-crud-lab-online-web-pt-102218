@@ -44,6 +44,6 @@ class ApplicationController < Sinatra::Base
   end
 
   delete "/articles:id" do
-
+    @article = Article.find_by(id: params[:id])
   end
 end
