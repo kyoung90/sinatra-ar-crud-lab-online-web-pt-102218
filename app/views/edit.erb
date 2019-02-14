@@ -7,6 +7,13 @@
   <body>
     <form class="" action="/articles/<%=@article.id%>" method="post">
       <input type="hidden" name="_method" value="PATCH">
+      <label for="">title: </label>
+      <input type="text" name="title" value="">
+      <br>
+      <label for="">content: </label>
+      <input type="text" name="content" value="">
+      <br>
+      <input type="submit" name="Submit">
     </form>
   </body>
 </html>
